@@ -1,0 +1,18 @@
+{
+  "name": "gifts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "author": "golovastik",
+  "license": "ISC",
+  "browserslist": [
+    "last 2 version"
+  ],
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}
