@@ -13,6 +13,9 @@
     "last 2 version"
   ],
   "dependencies": {
-    "gulp": "^4.0.2"
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.7"
   }
 }
