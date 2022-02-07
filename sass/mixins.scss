@@ -45,7 +45,7 @@
   }
   
   @function px-to-rem($size, $basicSize: 16px) {
-    @return $size / $basicSize#{rem};
+    @return calc($size / $basicSize ) + #{rem};
   }
   
   @mixin dynamicText($minSizePercent, $maxSize, $minSize, $minWidthPx, $maxWidth, $minWidth) {
