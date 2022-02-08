@@ -128,3 +128,98 @@ body {
   font-size: 1.125rem;
   display: inline-block;
 }
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header-nav {
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header-logo {
+    margin-bottom: 24px;
+  }
+}
+.about {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "find imgRight" "imgLeft work";
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.about-find {
+  grid-area: find;
+  background: #F1F1F2;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+.about-find div {
+  max-width: 440px;
+}
+.about-find h1 {
+  font-size: 3.5rem;
+  line-height: 4.0625rem;
+  margin-bottom: 45px;
+  font-weight: 500;
+}
+.about-find p {
+  margin-bottom: 36px;
+}
+
+.about-img-right {
+  grid-area: imgRight;
+}
+
+.about-img-left {
+  grid-area: imgLeft;
+}
+
+.about-work {
+  grid-area: work;
+  background: #F1F1F2;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+.about-work div {
+  max-width: 440px;
+}
+.about-work h2 {
+  font-size: 2rem;
+  line-height: 2.8125rem;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+.about-work p {
+  margin-bottom: 36px;
+}
+
+.btn-orange {
+  text-transform: uppercase;
+  background: #f7941e;
+  border-radius: 5px;
+  color: #fff;
+  padding: 20px 35px;
+  text-decoration: none;
+  font-size: 1.125rem;
+  display: inline-block;
+}
+
+.btn-transparent-orange {
+  text-transform: uppercase;
+  border: 1px solid #f7941e;
+  border-radius: 5px;
+  color: #f7941e;
+  padding: 20px 45px;
+  text-decoration: none;
+  font-size: 1.125rem;
+  display: inline-block;
+}

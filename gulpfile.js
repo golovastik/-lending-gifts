@@ -9,11 +9,13 @@ var gulp = require('gulp'),
 gulp.task('html', function () {
     return gulp.src('*.html')
         .pipe(gulp.dest('build'))
+        .pipe(browserSync.reload({stream: true}));
 })
 gulp.task('sass', function () {
     return gulp.src('sass/style.scss')
         .pipe(sass())
         .pipe(gulp.dest('build/css'))
+        .pipe(browserSync.reload({stream: true}));
 })
 gulp.task('allimg', function () {
     return gulp.src('img/*.{png, svg, jpg}')
@@ -44,7 +46,7 @@ gulp.task('serve', function () {
     browserSync.init({
         server: "build"
     });
-    gulp.watch("scss/**/*.scss", gulp.parallel("sass"))
+    gulp.watch("sass/**/*.scss", gulp.parallel("sass"))
     gulp.watch("*.html", gulp.parallel('html'))
 })
 

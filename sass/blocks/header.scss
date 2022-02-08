@@ -33,3 +33,18 @@
     font-size: px-to-rem(18px);
     display: inline-block;
 }
+
+@media (max-width:700px){
+    .header{
+        flex-direction: column;
+    }
+    .header-nav{
+        margin-bottom: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header-logo{
+        margin-bottom: 24px;
+    }
+    
+}
