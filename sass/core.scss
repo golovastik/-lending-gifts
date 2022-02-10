@@ -20,3 +20,10 @@ body {
 .wrap {
 	@include min-max(320px, 1170px, 15px);
 }
+.centered{
+	text-align: center;
+	font-size: px-to-rem(32px);
+	line-height: px-to-rem(37px);
+	font-weight: 300;
+	margin-bottom: 24px;
+}
