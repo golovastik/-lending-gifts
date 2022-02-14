@@ -527,3 +527,43 @@ p.posts-item-read a:hover {
     padding: 25px 15px;
   }
 }
+.footer-wrap {
+  background: #fafafa;
+  padding: 115px 0 40px 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.footer-nav li {
+  margin: 5px 25px;
+}
+.footer-nav li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+.footer-nav li a:hover {
+  text-decoration: underline;
+}
+
+.footer-hr {
+  height: 1px;
+  background: #000;
+  width: 85%;
+  margin-bottom: 40px;
+}
+
+.footer-copy {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
