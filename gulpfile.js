@@ -23,7 +23,7 @@ gulp.task('allimg', function () {
 })
 
 gulp.task('images', function () {
-    return gulp.src('img/*.{png, svg, jpg}')
+    return gulp.src('img/*')
         .pipe(imagemin([
             // gulp.imagemin.jpegtran({ progressive: true }),
             // gulp.imageminJpegRecompress({
@@ -39,7 +39,10 @@ gulp.task('images', function () {
         .pipe(gulp.dest('build/img'));
 })
 
-
+gulp.task('svg', function(){
+    return gulp.src('img/*.svg')
+    .pipe(gulp.dest('build/img'))
+})
 
 
 gulp.task('serve', function () {
@@ -52,5 +55,5 @@ gulp.task('serve', function () {
 
 
 
-gulp.task('build', gulp.series('html', 'sass', 'images'))
+gulp.task('build', gulp.series('html', 'sass', 'images', 'svg', 'allimg'))
 
